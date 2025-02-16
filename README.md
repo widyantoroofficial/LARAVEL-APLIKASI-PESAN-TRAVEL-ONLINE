@@ -2,10 +2,6 @@
 
 ini adalah Aplikasi Pemesan Travel secara online, yang di buat oleh Muhamad Widyantoro sebagai Betuk Test Programing.
 
-## 📽 Videos
-
--   [Demo Video](#) _(Tambahkan link video demo jika ada)_
-
 ## 🌐 Demo
 
 Kunjungi aplikasi Travel Online di:

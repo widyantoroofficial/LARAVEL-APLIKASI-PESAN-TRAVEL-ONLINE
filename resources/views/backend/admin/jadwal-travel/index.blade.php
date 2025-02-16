@@ -62,3 +62,7 @@ $title = 'Data Jadwal Travel';
 
 @endsection
 @include('backend.admin.jadwal-travel.modal.tambah-modal')
+@foreach($jadwaltravel as $data)
+@include('backend.admin.jadwal-travel.modal.edit-modal')
+@include('backend.admin.jadwal-travel.modal.hapus-modal')
+@endforeach

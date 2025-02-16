@@ -26,4 +26,24 @@ class JadwalTravelController extends Controller
         ]);
         return redirect()->route('backend.jadwal-travel.index')->with('success', 'Berhasil Tambah Jadwal Travel');
     }
+    public function edit(Request $request, $id)
+    {
+        $jadwaltravel = JadwalTravel::find($id);
+        $jadwaltravel->update([
+            'nama_travel' => $request->nama_travel,
+            'asal_travel' => $request->asal_travel,
+            'tujuan_travel' => $request->tujuan_travel,
+            'tanggal_travel' => $request->tanggal_travel,
+            'jam_travel' => $request->jam_travel,
+            'harga_travel' => $request->harga_travel,
+            'kuota_travel' => $request->kuota_travel,
+        ]);
+        return redirect()->route('backend.jadwal-travel.index')->with('success', 'Berhasil Edit Jadwal Travel');
+    }
+    public function hapus($id)
+    {
+        $jadwaltravel = JadwalTravel::find($id);
+        $jadwaltravel->delete();
+        return redirect()->route('backend.jadwal-travel.index')->with('success', 'Berhasil Hapus Jadwal Travel');
+    }
 }
