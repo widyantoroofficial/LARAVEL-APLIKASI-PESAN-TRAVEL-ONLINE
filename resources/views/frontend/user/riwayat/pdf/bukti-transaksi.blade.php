@@ -9,40 +9,35 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            color: #333;
+            padding: 20px;
             background-color: #f8f9fa;
+            color: #333;
         }
 
         .invoice-container {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 40px;
+            margin: 0 auto;
+            padding: 30px;
             background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .header {
             text-align: center;
             margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e9ecef;
         }
 
         .header h1 {
-            font-size: 32px;
+            font-size: 28px;
             margin: 0;
-            color: #2d3748;
+            color: #4f46e5;
             font-weight: 700;
-            background: linear-gradient(135deg, #4f46e5, #9333ea);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
         .header p {
             margin: 5px 0;
-            color: #718096;
+            color: #666;
             font-size: 14px;
         }
 
@@ -51,18 +46,18 @@
         }
 
         .details h2 {
-            font-size: 20px;
-            margin-bottom: 15px;
-            color: #2d3748;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #4f46e5;
             font-weight: 600;
-            border-left: 4px solid #4f46e5;
-            padding-left: 10px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 5px;
         }
 
         .details p {
             margin: 8px 0;
             font-size: 14px;
-            color: #4a5568;
+            color: #555;
         }
 
         .table {
@@ -91,9 +86,9 @@
 
         .total {
             text-align: right;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
-            color: #2d3748;
+            color: #4f46e5;
             margin-top: 20px;
             padding-top: 10px;
             border-top: 2px solid #e9ecef;
@@ -105,7 +100,7 @@
             padding-top: 20px;
             border-top: 2px solid #e9ecef;
             font-size: 14px;
-            color: #718096;
+            color: #666;
         }
 
         .status-card {
@@ -119,16 +114,16 @@
         }
 
         .status-title {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
-            color: #2d3748;
+            color: #4f46e5;
             margin-bottom: 10px;
         }
 
         .status-text {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
-            color: #4a5568;
+            color: #555;
         }
 
         .status-label {
@@ -138,44 +133,19 @@
             color: #fff;
             font-weight: 600;
             font-size: 14px;
-            background: linear-gradient(135deg, #4f46e5, #9333ea);
+            background: #4f46e5;
         }
 
-        /* Warna untuk status */
         .status-warning {
-            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+            background: #f59e0b;
         }
 
         .status-success {
-            background: linear-gradient(135deg, #10b981, #34d399);
+            background: #10b981;
         }
 
         .status-danger {
-            background: linear-gradient(135deg, #ef4444, #f87171);
-        }
-
-        .logo {
-            max-width: 150px;
-            margin-bottom: 15px;
-        }
-
-        .invoice-number {
-            font-size: 18px;
-            font-weight: 600;
-            color: #4a5568;
-            margin-bottom: 10px;
-        }
-
-        .invoice-date {
-            font-size: 14px;
-            color: #718096;
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #4f46e5, #9333ea);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
+            background: #ef4444;
         }
 
         .highlight {
@@ -190,7 +160,7 @@
         <!-- Header -->
         <div class="header">
             <h1>Invoice Pembayaran</h1>
-            <p class="invoice-number">Nomor Invoice: <span class="gradient-text">#{{ $order->kode_order }}</span></p>
+            <p class="invoice-number">Nomor Invoice: <span class="highlight">#{{ $order->kode_order }}</span></p>
             <p class="invoice-date">Tanggal: {{ now()->format('d F Y') }}</p>
         </div>
 
