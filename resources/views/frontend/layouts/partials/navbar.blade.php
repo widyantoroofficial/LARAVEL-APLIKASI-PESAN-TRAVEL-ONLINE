@@ -33,6 +33,9 @@
 
                 <!-- Dropdown Menu -->
                 <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-white text-gray-900 rounded shadow-lg">
+                    @role('Admin')
+                    <a href="{{ route('backend.dashboard.index') }}" class="block w-full text-left px-4 py-2 hover:bg-gray-200">Dashboard</a>
+                    @endrole
                     <form method="POST" action="{{ route('logout') }}" class="w-full">
                         @csrf
                         <button type="submit" class="block w-full text-left px-4 py-2 hover:bg-gray-200">

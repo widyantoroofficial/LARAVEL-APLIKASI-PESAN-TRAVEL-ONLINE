@@ -56,7 +56,7 @@
                                     <label for="travel" class="form-label fw-bold">Harga Travel</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-tag"></i></span>
-                                        <input type="text" name="harga_travel" value="{{ old('harga_travel') }}" class="form-control" placeholder="Masukkan Harga Travel" required>
+                                        <input type="number" name="harga_travel" value="{{ old('harga_travel') }}" class="form-control" placeholder="Masukkan Harga Travel" required inputmode="numeric" pattern="[0-9]*">
                                     </div>
                                 </div>
                                 <div class="mb-3">
