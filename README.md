@@ -44,23 +44,29 @@ Pastikan Anda sudah menginstal **PHP, Composer, dan MySQL** di sistem Anda.
     git clone git@github.com:widyantoroofficial/LARAVEL-APLIKASI-PESAN-TRAVEL-ONLINE.git
     cd LARAVEL-APLIKASI-PESAN-TRAVEL-ONLINE
     ```
-2. **Install Dependencies**
+2. **Install Composer**
     ```bash
-    composer install
-    npm install && npm run dev
+    https://getcomposer.org/Composer-Setup.exe
     ```
-3. **Buat File .env**
+3. **Install Dependencies**
+    ```bash
+    composer update
+    ```
+4. **Buat File .env**
     ```bash
     cp .env.example .env
     ```
-4. **Konfigurasi Database**
+5. **Konfigurasi Database**
     - Buka `.env` dan atur `DB_DATABASE`, `DB_USERNAME`, dan `DB_PASSWORD`
-5. **Generate Key & Migrasi Database**
+6. **Generate Key & Migrasi Database**
     ```bash
     php artisan key:generate
-    php artisan migrate --seed
     ```
-6. **Jalankan Aplikasi**
+7. **Migrasi Database & Data Seeder**
+    ```bash
+    php artisan migrate:fresh --seed
+    ```
+8. **Jalankan Aplikasi**
     ```bash
     php artisan serve
     ```
