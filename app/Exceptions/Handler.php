@@ -57,6 +57,9 @@ class Handler extends ExceptionHandler
         if ($exception instanceof ForbiddenHttpException) {
             return response()->view('error.403', [], 403);
         }
+        if ($exception instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
+            return response()->view('error.404', [], 404);
+        }
 
         return parent::render($request, $exception);
     }
