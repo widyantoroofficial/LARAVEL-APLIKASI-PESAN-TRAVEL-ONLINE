@@ -75,7 +75,13 @@ Pastikan Anda sudah menginstal **PHP, Composer, dan MySQL** di sistem Anda.
 ## 🖼 Screenshots
 
 _Tambahkan screenshot aplikasi di sini untuk memperjelas tampilan fitur._
+
+### Tampilan Halaman Frontend
+
 ![Tampilan Halaman Frontend](screenshot/frontend.jpg)
+
+### Tampilan Halaman Backend
+
 ![Tampilan Halaman Backend](screenshot/backend.jpg)
 
 ---
