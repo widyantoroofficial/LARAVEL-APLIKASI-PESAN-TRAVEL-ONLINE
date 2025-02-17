@@ -21,49 +21,49 @@
                                     <label for="travel" class="form-label fw-bold">Nama Travel</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-tag"></i></span>
-                                        <input type="text" name="nama_travel" class="form-control" placeholder="Masukkan Nama Travel" required>
+                                        <input type="text" name="nama_travel" value="{{ old('nama_travel') }}" class="form-control" placeholder="Masukkan Nama Travel" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="travel" class="form-label fw-bold">Travel Asal</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-tag"></i></span>
-                                        <input type="text" name="asal_travel" class="form-control" placeholder="Masukkan Asal Travel" required>
+                                        <input type="text" name="asal_travel" value="{{ old('asal_travel') }}" class="form-control" placeholder="Masukkan Asal Travel" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="travel" class="form-label fw-bold">Travel Tujuan</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-tag"></i></span>
-                                        <input type="text" name="tujuan_travel" class="form-control" placeholder="Masukkan Tujuan Travel" required>
+                                        <input type="text" name="tujuan_travel" value="{{ old('tujuan_travel') }}" class="form-control" placeholder="Masukkan Tujuan Travel" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="travel" class="form-label fw-bold">Tanggal Travel</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-tag"></i></span>
-                                        <input type="date" name="tanggal_travel" class="form-control" required>
+                                        <input type="date" name="tanggal_travel" value="{{ old('tanggal_travel') }}" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="travel" class="form-label fw-bold">Jam Travel</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-tag"></i></span>
-                                        <input type="time" name="jam_travel" class="form-control" required>
+                                        <input type="time" name="jam_travel" value="{{ old('jam_travel') }}" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="travel" class="form-label fw-bold">Harga Travel</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-tag"></i></span>
-                                        <input type="text" name="harga_travel" class="form-control" placeholder="Masukkan Harga Travel" required>
+                                        <input type="text" name="harga_travel" value="{{ old('harga_travel') }}" class="form-control" placeholder="Masukkan Harga Travel" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="travel" class="form-label fw-bold">Kuota Travel</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-tag"></i></span>
-                                        <input type="text" name="kuota_travel" class="form-control" placeholder="Masukkan Kuota Travel" required>
+                                        <input type="number" name="kuota_travel" value="{{ old('kuota_travel') }}" class="form-control" placeholder="Masukkan Kuota Travel" required min="1" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                                     </div>
                                 </div>
                             </div>
