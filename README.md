@@ -26,14 +26,14 @@ Kunjungi aplikasi Travel Online di:
 
 ## 🚀 Fitur Utama
 
-✅ Manajemen pengguna dengan autentikasi
-✅ Manajemen Role dan Permission
-✅ Manajemen Jadwal Travel
-✅ Sistem Pesan Travel
-✅ Sistem Pembayaraan  
-✅ Sistem riwayat pemesanan  
-✅ Responsif dan ramah pengguna untuk frontend
-✅ Filter pencarian dan pemilihan jadwal travel
+-   ✅ Manajemen pengguna dengan autentikasi
+-   ✅ Manajemen Role dan Permission
+-   ✅ Manajemen Jadwal Travel
+-   ✅ Sistem Pesan Travel
+-   ✅ Sistem Pembayaran
+-   ✅ Sistem Riwayat Pemesanan
+-   ✅ Responsif dan Ramah Pengguna untuk Frontend
+-   ✅ Filter Pencarian dan Pemilihan Jadwal Travel
 
 ## 📥 Cara Instalasi
 
