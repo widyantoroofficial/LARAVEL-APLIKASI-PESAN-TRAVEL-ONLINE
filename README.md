@@ -1,6 +1,6 @@
 # Travel Online
 
-ini adalah Aplikasi Pemesan Travel secara online, yang di buat oleh Muhamad Widyantoro sebagai Betuk Test Programing.
+ini adalah Aplikasi Pemesan Travel secara online, yang di buat oleh Muhamad Widyantoro sebagai Bentuk Test Programing.
 
 ## 🌐 Demo
 
